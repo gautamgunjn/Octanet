@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OctaNet Services Task Submission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="logo.jpeg" alt="OctaNet Services Logo" class="logo">
+            <h1 class="company-name">OctaNet Services</h1>
+            <a href="#" class="join-now">Join Us Now</a>
+        </header>
+        <div class="form-container">
+            <h2 class="form-title">SUBMISSION FORM</h2>
+            <p class="service-name">OctaNet Software Services</p>
+            <p class="task-name">TO DO List</p>
+            <ul class="task-details">
+                <li>Create and categorize tasks related to your website project. Assign deadlines, priorities, and labels to each task for better organization and clarity.</li>
+                <li>Prioritize tasks based on urgency, importance, or project dependencies. This feature ensures that you focus on high-priority items and maintain a productive workflow.</li>
+                <li>Monitor the progress of your tasks in real-time. Visualize your achievements and identify bottlenecks to make necessary adjustments and stay on track towards meeting your website goals.</li>
+            </ul>
+            <form action="submit_form.php" method="POST" class="submission-form">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-Mail ID *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="college-name">College Name *</label>
+                <input type="text" id="college-name" name="college-name" required>
+
+                <label for="github-repo">GitHub Repository Link *</label>
+                <input type="url" id="github-repo" name="github-repo" required>
+
+                <label for="linkedin-task">LinkedIn Task Explanation Link *</label>
+                <input type="url" id="linkedin-task" name="linkedin-task" required>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
